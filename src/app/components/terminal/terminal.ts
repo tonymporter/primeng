@@ -17,7 +17,7 @@ import {DomHandler} from '../dom/domhandler';
             </div>
             <div>
                 <span class="ui-terminal-content-prompt">{{prompt}}</span>
-                <input #in type="text" [(ngModel)]="command" class="ui-terminal-input" autocomplete="off" (keydown)="handleCommand($event)" autofocus>
+                <input #in type="text" [(ngModel)]="command" class="ui-terminal-input" autocomplete="off"  autocorrect="off" autocapitalize="none" (keydown)="handleCommand($event)" autofocus>
             </div>
         </div>
     `,
